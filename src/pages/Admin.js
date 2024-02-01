@@ -11,7 +11,7 @@ function Admin() {
     const[c2bcount,setC2bcount]=useState(0)
 
     useEffect(()=>{
-        const Response=Axios.get("http://localhost:3001/getData").then((res)=>{
+        const Response=Axios.get("https://loginbackend-21gt.onrender.com/getData").then((res)=>{
             console.log(res)
             res.data.map((item)=>{
                 if(item.Role==="customer1"){

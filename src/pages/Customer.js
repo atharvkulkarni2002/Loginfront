@@ -82,7 +82,7 @@ function Customer() {
         Cdata={Cdata,Role:`${localStorage.getItem("mail")}`}
         console.log(Cdata)
     
-        Axios.post("http://localhost:3001/insert", Cdata).then((res) => {
+        Axios.post("https://loginbackend-21gt.onrender.com/insert", Cdata).then((res) => {
           console.log(res);
           console.log("added");
           window.location.reload();

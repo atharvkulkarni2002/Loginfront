@@ -14,7 +14,7 @@ function Login() {
   const checkinfo=(e)=>{
     e.preventDefault()
     console.log('send')
-    Axios.post("http://localhost:3001/checkinfo",{
+    Axios.post("https://loginbackend-21gt.onrender.com/checkinfo",{
       email:checkEmail,
       password:checkPassword,
     }).then((Response)=>{
